@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+
+  "name": "One Page",
+  "short_name": "OnePage",
+  "description": "__MSG_extDescription__",
+  "default_locale": "en",
+  "version": "0.2",
+  "icons": {
+    "128": "icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://www.zeit.de/*", "https://ssl.zeit.de/*", "https://www.zeit.de/"],
+      "js": ["common.js", "websites/zeit.js"],
+      "run_at": "document_end"
+    },
+    {
+      "matches": ["http://www.faz.net/*", "https://www.faz.net/*"],
+      "js": ["common.js", "websites/faz.js"],
+      "run_at": "document_end"
+    },
+    {
+      "matches": ["http://www.sueddeutsche.de/*", "https://www.sueddeutsche.de/*"],
+      "js": ["common.js", "websites/sz.js"],
+      "run_at": "document_end"
+    },
+    {
+      "matches": ["http://www.berliner-zeitung.de/*"],
+      "js": ["common.js", "websites/bz.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "declarativeContent"
+  ]
+}
