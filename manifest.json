@@ -60,6 +60,17 @@
                 "websites/bz.js"
             ],
             "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "http://www.macworld.co.uk/*",
+                "https://www.macworld.co.uk/*"
+            ],
+            "js": [
+                "common.js",
+                "websites/macworld.js"
+            ],
+            "run_at": "document_end"
         }
     ],
     "permissions": [
