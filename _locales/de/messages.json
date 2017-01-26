@@ -1,5 +1,14 @@
 {
     "extDescription": {
         "message": "Erweiterung zeigt mehrseitige Artikel auf einer Seite an."
+    },
+    "notWorking": {
+        "message": "Artikel besteht aus mehreren Seiten?"
+    },
+    "report": {
+        "message": "Mehrseitigen Artikel melden"
+    },
+    "btnSubmit": {
+        "message": "Artikel melden"
     }
 }
