@@ -1,45 +1,73 @@
 {
-  "manifest_version": 2,
-
-  "name": "One Page",
-  "short_name": "OnePage",
-  "description": "__MSG_extDescription__",
-  "default_locale": "en",
-  "version": "0.2",
-  "icons": {
-    "128": "icon-128.png"
-  },
-  "browser_action": {
-    "default_icon": {
-      "128": "icon-ba-128.png"
+    "manifest_version": 2,
+    "name": "One Page",
+    "author": "pablotheissen",
+    "short_name": "OnePage",
+    "description": "__MSG_extDescription__",
+    "default_locale": "en",
+    "version": "0.2",
+    "icons": {
+        "128": "icon-128.png"
     },
-    "default_title": "__MSG_report__",      // optional; shown in tooltip
-    "default_popup": "popup.html"        // optional
-  },
-  "content_scripts": [
-    {
-      "matches": ["http://www.zeit.de/*", "https://ssl.zeit.de/*", "https://www.zeit.de/"],
-      "js": ["common.js", "websites/zeit.js"],
-      "run_at": "document_end"
+    "browser_action": {
+        "default_icon": {
+            "128": "icon-ba-128.png"
+        },
+        "default_title": "__MSG_report__",
+        "default_popup": "popup.html"
     },
-    {
-      "matches": ["http://www.faz.net/*", "https://www.faz.net/*"],
-      "js": ["common.js", "websites/faz.js"],
-      "run_at": "document_end"
-    },
-    {
-      "matches": ["http://www.sueddeutsche.de/*", "https://www.sueddeutsche.de/*"],
-      "js": ["common.js", "websites/sz.js"],
-      "run_at": "document_end"
-    },
-    {
-      "matches": ["http://www.berliner-zeitung.de/*"],
-      "js": ["common.js", "websites/bz.js"],
-      "run_at": "document_end"
+    "content_scripts": [
+        {
+            "matches": [
+                "http://www.zeit.de/*",
+                "https://ssl.zeit.de/*",
+                "https://www.zeit.de/"
+            ],
+            "js": [
+                "common.js",
+                "websites/zeit.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "http://www.faz.net/*",
+                "https://www.faz.net/*"
+            ],
+            "js": [
+                "common.js",
+                "websites/faz.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "http://www.sueddeutsche.de/*",
+                "https://www.sueddeutsche.de/*"
+            ],
+            "js": [
+                "common.js",
+                "websites/sz.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "http://www.berliner-zeitung.de/*"
+            ],
+            "js": [
+                "common.js",
+                "websites/bz.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "permissions": [
+        "activeTab",
+        "declarativeContent"
+    ],
+    "-ms-preload": {
+        "backgroundScript": "backgroundScriptsAPIBridge.js",
+        "contentScript": "contentScriptsAPIBridge.js"
     }
-  ],
-  "permissions": [
-    "activeTab",
-    "declarativeContent"
-  ]
 }
