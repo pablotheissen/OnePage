@@ -10,5 +10,14 @@
     },
     "btnSubmit": {
         "message": "Report article"
+    },
+    "responseThanks": {
+        "message": "Thanks for the report!"
+    },
+    "responseMail": {
+        "message": "Problems while reporting. Send email instead?"
+    },
+    "sendMail": {
+        "message": "Send e-mail"
     }
 }

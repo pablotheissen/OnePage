@@ -3,12 +3,21 @@
         "message": "Erweiterung zeigt mehrseitige Artikel auf einer Seite an."
     },
     "notWorking": {
-        "message": "Artikel besteht aus mehreren Seiten?"
+        "message": "Besteht der Artikel aus mehreren Seiten?"
     },
     "report": {
         "message": "Mehrseitigen Artikel melden"
     },
     "btnSubmit": {
         "message": "Artikel melden"
+    },
+    "responseThanks": {
+        "message": "Danke für die Meldung!"
+    },
+    "responseMail": {
+        "message": "Es gab Probleme beim versenden. Per E-Mail melden?"
+    },
+    "sendMail": {
+        "message": "E-Mail senden"
     }
 }
