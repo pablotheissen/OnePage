@@ -5,7 +5,7 @@
     "short_name": "OnePage",
     "description": "__MSG_extDescription__",
     "default_locale": "en",
-    "version": "0.3.2",
+    "version": "0.3.3",
     "icons": {
         "128": "icon-128.png"
     },
@@ -76,7 +76,9 @@
     "permissions": [
         "tabs",
         "activeTab",
-        "declarativeContent"
+        "declarativeContent",
+        "http://*/*",
+        "https://*/*"
     ],
     "-ms-preload": {
         "backgroundScript": "backgroundScriptsAPIBridge.js",
