@@ -2,7 +2,6 @@
   * http://sz.de/1.3348711
   */
 var re = /Alles\sauf\seiner\sSeite/i;
-console.log(re.test(document.body.innerText));
 if (re.test(document.body.innerText)/* && window.location.href.search("onepage") == -1*/) {
     var url = cleanUrl(window.location.href);
   
