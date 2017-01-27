@@ -1,3 +1,4 @@
+<img align="right" src="assets/icon-128.png" width="128">
 # One Page
 One Page is a browser extension for automatically displaying multi-page news articles on a single page.
 
