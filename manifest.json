@@ -5,13 +5,13 @@
     "short_name": "OnePage",
     "description": "__MSG_extDescription__",
     "default_locale": "en",
-    "version": "0.3.3",
+    "version": "0.3.4",
     "icons": {
-        "128": "icon-128.png"
+        "128": "assets/icon-128.png"
     },
     "browser_action": {
         "default_icon": {
-            "128": "icon-ba-128.png"
+            "128": "assets/icon-ba-128.png"
         },
         "default_title": "__MSG_report__",
         "default_popup": "popup.html"
@@ -19,13 +19,11 @@
     "content_scripts": [
         {
             "matches": [
-                "http://www.zeit.de/*",
-                "https://ssl.zeit.de/*",
-                "https://www.zeit.de/"
+                "http://www.berliner-zeitung.de/*"
             ],
             "js": [
                 "common.js",
-                "websites/zeit.js"
+                "websites/bz.js"
             ],
             "run_at": "document_end"
         },
@@ -42,22 +40,12 @@
         },
         {
             "matches": [
-                "http://www.sueddeutsche.de/*",
-                "https://www.sueddeutsche.de/*"
+                "http://www.handelsblatt.com/*",
+                "https://www.handelsblatt.com/*"
             ],
             "js": [
                 "common.js",
-                "websites/sz.js"
-            ],
-            "run_at": "document_end"
-        },
-        {
-            "matches": [
-                "http://www.berliner-zeitung.de/*"
-            ],
-            "js": [
-                "common.js",
-                "websites/bz.js"
+                "websites/handelsblatt.js"
             ],
             "run_at": "document_end"
         },
@@ -71,6 +59,51 @@
                 "websites/macworld.js"
             ],
             "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "http://www.sueddeutsche.de/*",
+                "https://www.sueddeutsche.de/*"
+            ],
+            "js": [
+                "common.js",
+                "websites/sz.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "http://www.tagesspiegel.de/*",
+                "https://www.sueddeutsche.de/*"
+            ],
+            "js": [
+                "common.js",
+                "websites/tagesspiegel.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "http://www.wiwo.de/*",
+                "https://www.wiwo.de/*"
+            ],
+            "js": [
+                "common.js",
+                "websites/wiwo.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "http://www.zeit.de/*",
+                "https://ssl.zeit.de/*",
+                "https://www.zeit.de/"
+            ],
+            "js": [
+                "common.js",
+                "websites/zeit.js"
+            ],
+            "run_at": "document_end"
         }
     ],
     "permissions": [
@@ -81,7 +114,7 @@
         "https://*/*"
     ],
     "-ms-preload": {
-        "backgroundScript": "backgroundScriptsAPIBridge.js",
-        "contentScript": "contentScriptsAPIBridge.js"
+        "backgroundScript": "assets/edge/backgroundScriptsAPIBridge.js",
+        "contentScript": "assets/edge/contentScriptsAPIBridge.js"
     }
 }
