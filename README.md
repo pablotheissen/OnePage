@@ -18,4 +18,5 @@ Or of course by creating an Issue or Pull request at [GitHub](https://github.com
 * Süddeutsche Zeitung (→ [example](http://sz.de/1.3348711))
 * Tagesspiegel (→ [example](http://www.tagesspiegel.de/19282294.html))
 * WiWo (→ [example](https://www.wiwo.de/19311936.html))
+* WR (→ [example](http://www.wr.de/-id6647514.html))
 * Zeit (→ [example](http://www.zeit.de/wirtschaft/unternehmen/2017-01/rossmann-dm-drogerie-preiskampf-mitarbeiter-image))

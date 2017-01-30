@@ -95,6 +95,17 @@
         },
         {
             "matches": [
+                "http://www.wr.de/*",
+                "https://www.wr.de/*"
+            ],
+            "js": [
+                "common.js",
+                "websites/wr.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
                 "http://www.zeit.de/*",
                 "https://ssl.zeit.de/*",
                 "https://www.zeit.de/"
