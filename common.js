@@ -7,3 +7,5 @@ function cleanUrl(url) {
     }
     return url;
 }
+
+var sending = chrome.runtime.sendMessage({ cmd: "showActiveIcon" });
