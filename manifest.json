@@ -5,7 +5,7 @@
     "short_name": "OnePage",
     "description": "__MSG_extDescription__",
     "default_locale": "en",
-    "version": "0.3.6",
+    "version": "0.3.7",
     "icons": {
         "128": "assets/logo-128.png"
     },
@@ -22,6 +22,16 @@
         "default_popup": "popup.html"
     },
     "content_scripts": [
+        {
+            "matches": [
+                "https://arstechnica.com/*"
+            ],
+            "js": [
+                "common.js",
+                "websites/arstechnica_injector.js"
+            ],
+            "run_at": "document_end"
+        },
         {
             "matches": [
                 "http://www.berliner-zeitung.de/*"
@@ -121,6 +131,9 @@
             ],
             "run_at": "document_end"
         }
+    ],
+    "web_accessible_resources": [
+        "websites/arstechnica.js"
     ],
     "permissions": [
         "tabs",
