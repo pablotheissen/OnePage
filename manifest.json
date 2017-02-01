@@ -66,6 +66,17 @@
         },
         {
             "matches": [
+                "http://www.lifebuzz.com/*",
+                "https://www.lifebuzz.com/*"
+            ],
+            "js": [
+                "common.js",
+                "websites/lifebuzz.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
                 "http://www.macworld.co.uk/*",
                 "https://www.macworld.co.uk/*"
             ],
