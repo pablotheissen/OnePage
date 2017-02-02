@@ -110,6 +110,17 @@
         },
         {
             "matches": [
+                "http://thephoenix.com/*",
+                "https://thephoenix.com/*"
+            ],
+            "js": [
+                "common.js",
+                "websites/thephoenix.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
                 "http://www.wiwo.de/*",
                 "https://www.wiwo.de/*"
             ],
