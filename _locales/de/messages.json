@@ -1,6 +1,6 @@
 {
     "extDescription": {
-        "message": "Erweiterung zeigt mehrseitige Artikel auf einer Seite an."
+        "message": "Mehrseitige Artikel automatisch zusammenführen und auf einer Seite lesen."
     },
     "notWorking": {
         "message": "Besteht der Artikel aus mehreren Seiten?"
