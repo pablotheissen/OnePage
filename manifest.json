@@ -5,12 +5,14 @@
     "short_name": "OnePage",
     "description": "__MSG_extDescription__",
     "default_locale": "en",
-    "version": "0.3.7",
+    "version": "0.3.8",
     "icons": {
         "128": "assets/logo-128.png"
     },
     "background": {
-        "scripts": ["background.js"]
+        "scripts": [
+            "background.js"
+        ]
     },
     "browser_action": {
         "default_icon": {
@@ -50,6 +52,17 @@
             "js": [
                 "common.js",
                 "websites/faz.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "http://www.golem.de/*",
+                "https://www.golem.de/*"
+            ],
+            "js": [
+                "common.js",
+                "websites/golem.js"
             ],
             "run_at": "document_end"
         },
