@@ -134,6 +134,17 @@
         },
         {
             "matches": [
+                "http://www.trueactivist.com/*",
+                "https://www.trueactivist.com/*"
+            ],
+            "js": [
+                "common.js",
+                "websites/trueactivist.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
                 "http://www.wiwo.de/*",
                 "https://www.wiwo.de/*"
             ],
