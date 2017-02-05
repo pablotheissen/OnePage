@@ -46,6 +46,19 @@
         },
         {
             "matches": [
+                "http://social.diply.com/*",
+                "http://diply.com/*",
+                "https://social.diply.com/*",
+                "https://diply.com/*"
+            ],
+            "js": [
+                "common.js",
+                "websites/diply-com.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
                 "http://www.faz.net/*",
                 "https://www.faz.net/*"
             ],

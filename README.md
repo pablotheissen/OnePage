@@ -14,6 +14,7 @@ Or of course by creating an Issue or Pull request at [GitHub](https://github.com
 ## Supported Websites
 * Arstechnica (→ [example](https://arstechnica.com/video/2016/11/the-2016-13-and-15-inch-touch-bar-macbook-pros-reviewed/))
 * Berliner Zeitung (→ [example](http://www.berliner-zeitung.de/berlin/stadtratskandidat-in-neukoelln-schwul--migranten-lehrer--afd-politiker-25608022))
+* Diply (→ [example](https://diply.com/kirsten-dunst-jake-gyllenhaal-split))
 * F.A.Z. (→ [example](http://www.faz.net/-gqe-8s7et))
 * Golem (→ [example](https://www.golem.de/news/indiegames-rundschau-u-boote-astronauten-und-haruki-murakami-1702-125929.html))
 * Handelsblatt (→ [example](http://www.handelsblatt.com/19311926.html))
