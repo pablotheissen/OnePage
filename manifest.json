@@ -176,7 +176,7 @@
         },
         {
             "matches": [
-                "*://*.zeit.de/*",
+                "*://*.zeit.de/*"
             ],
             "js": [
                 "common.js",
