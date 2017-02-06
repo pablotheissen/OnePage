@@ -3,7 +3,7 @@
         "message": "This extension displays news articles split up on multiple pages as a single page."
     },
     "notWorking": {
-        "message": "Article is split up to multiple pages?"
+        "message": "Article is split up on multiple pages or other problems?"
     },
     "report": {
         "message": "Report multi-page article"
@@ -19,5 +19,17 @@
     },
     "sendMail": {
         "message": "Send e-mail"
+    },
+    "descDisable": {
+        "message": "Extension not running properly on this website?"
+    },
+    "btnDisable": {
+        "message": "Disable on this page"
+    },
+    "btnEnable": {
+        "message": "Ensable again"
+    },
+    "btnReload": {
+        "message": "Reload page"
     }
 }

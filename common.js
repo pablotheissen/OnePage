@@ -62,8 +62,6 @@ htmlToDom = function (htmlSourceCode) {
     return parser.parseFromString(htmlSourceCode, "text/html");
 }
 
-var sending = chrome.runtime.sendMessage({ cmd: "showActiveIcon" });
-
 /**
  * Convert relative path to absolute path
  * http://stackoverflow.com/a/14781678/4096957
@@ -85,5 +83,38 @@ function contains(selector, text, dom) {
     var elements = dom.querySelectorAll(selector);
     return Array.prototype.filter.call(elements, function (element) {
         return RegExp(text).test(element.textContent);
+    });
+}
+
+/**
+ * Get domain name from URL
+ * http://stackoverflow.com/a/23945027/4096957
+ */
+function extractDomain(url) {
+    var domain;
+    //find & remove protocol (http, ftp, etc.) and get domain
+    if (url.indexOf("://") > -1) {
+        domain = url.split('/')[2];
+    }
+    else {
+        domain = url.split('/')[0];
+    }
+
+    //find & remove port number
+    domain = domain.split(':')[0];
+
+    return domain;
+}
+
+if (typeof runOnePage === "function") {
+    chrome.storage.sync.get("disabledPages", function (data) {
+        if (typeof data["disabledPages"] === typeof undefined) {
+            chrome.storage.sync.set({ "disabledPages": [] });
+            data["disabledPages"] = [];
+        }
+        if (data["disabledPages"].indexOf(extractDomain(location.href)) === -1) {
+            var sending = chrome.runtime.sendMessage({ cmd: "showActiveIcon" });
+            runOnePage();
+        }
     });
 }

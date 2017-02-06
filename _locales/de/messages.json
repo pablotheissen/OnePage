@@ -3,7 +3,7 @@
         "message": "Mehrseitige Artikel automatisch zusammenführen und auf einer Seite lesen."
     },
     "notWorking": {
-        "message": "Besteht der Artikel aus mehreren Seiten?"
+        "message": "Besteht der Artikel aus mehreren Seiten oder gibt es andere Probleme?"
     },
     "report": {
         "message": "Mehrseitigen Artikel melden"
@@ -19,5 +19,17 @@
     },
     "sendMail": {
         "message": "E-Mail senden"
+    },
+    "descDisable": {
+        "message": "Funktioniert die Erweiterung auf dieser Webseite nicht korrekt?"
+    },
+    "btnDisable": {
+        "message": "Auf Webseite deaktivieren"
+    },
+    "btnEnable": {
+        "message": "Wieder aktivieren"
+    },
+    "btnReload": {
+        "message": "Seite neu laden"
     }
 }

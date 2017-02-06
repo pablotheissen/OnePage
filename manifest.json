@@ -5,7 +5,7 @@
     "short_name": "OnePage",
     "description": "__MSG_extDescription__",
     "default_locale": "en",
-    "version": "0.3.8",
+    "version": "0.4.0",
     "icons": {
         "128": "assets/logo-128.png"
     },
@@ -29,8 +29,8 @@
                 "*://*.arstechnica.com/*"
             ],
             "js": [
-                "common.js",
-                "websites/arstechnica_injector.js"
+                "websites/arstechnica-com_injector.js",
+                "common.js"
             ],
             "run_at": "document_end"
         },
@@ -39,8 +39,8 @@
                 "*://*.berliner-zeitung.de/*"
             ],
             "js": [
-                "common.js",
-                "websites/bz.js"
+                "websites/berliner-zeitung-de.js",
+                "common.js"
             ],
             "run_at": "document_end"
         },
@@ -49,8 +49,8 @@
                 "*://*.diply.com/*"
             ],
             "js": [
-                "common.js",
-                "websites/diply-com.js"
+                "websites/diply-com.js",
+                "common.js"
             ],
             "run_at": "document_end"
         },
@@ -59,8 +59,8 @@
                 "*://*.faz.net/*"
             ],
             "js": [
-                "common.js",
-                "websites/faz.js"
+                "websites/faz-net.js",
+                "common.js"
             ],
             "run_at": "document_end"
         },
@@ -69,8 +69,8 @@
                 "*://*.golem.de/*"
             ],
             "js": [
-                "common.js",
-                "websites/golem.js"
+                "websites/golem-de.js",
+                "common.js"
             ],
             "run_at": "document_end"
         },
@@ -79,8 +79,8 @@
                 "*://*.handelsblatt.com/*"
             ],
             "js": [
-                "common.js",
-                "websites/handelsblatt.js"
+                "websites/handelsblatt-com.js",
+                "common.js"
             ],
             "run_at": "document_end"
         },
@@ -89,8 +89,8 @@
                 "*://*.lifebuzz.com/*"
             ],
             "js": [
-                "common.js",
-                "websites/lifebuzz.js"
+                "websites/lifebuzz-com.js",
+                "common.js"
             ],
             "run_at": "document_end"
         },
@@ -99,8 +99,8 @@
                 "*://*.macworld.co.uk/*"
             ],
             "js": [
-                "common.js",
-                "websites/macworld.js"
+                "websites/macworld-co-uk.js",
+                "common.js"
             ],
             "run_at": "document_end"
         },
@@ -109,8 +109,8 @@
                 "*://*.sueddeutsche.de/*"
             ],
             "js": [
-                "common.js",
-                "websites/sz.js"
+                "websites/sueddeutsche-de.js",
+                "common.js"
             ],
             "run_at": "document_end"
         },
@@ -119,8 +119,8 @@
                 "*://*.tagesspiegel.de/*"
             ],
             "js": [
-                "common.js",
-                "websites/tagesspiegel.js"
+                "websites/tagesspiegel-de.js",
+                "common.js"
             ],
             "run_at": "document_end"
         },
@@ -129,8 +129,8 @@
                 "*://*.thecelebritylane.com/*"
             ],
             "js": [
-                "common.js",
-                "websites/thecelebritylane-com.js"
+                "websites/thecelebritylane-com.js",
+                "common.js"
             ],
             "run_at": "document_end"
         },
@@ -139,8 +139,8 @@
                 "*://*.thephoenix.com/*"
             ],
             "js": [
-                "common.js",
-                "websites/thephoenix.js"
+                "websites/thephoenix-com.js",
+                "common.js"
             ],
             "run_at": "document_end"
         },
@@ -149,8 +149,8 @@
                 "*://*.trueactivist.com/*"
             ],
             "js": [
-                "common.js",
-                "websites/trueactivist.js"
+                "websites/trueactivist-com.js",
+                "common.js"
             ],
             "run_at": "document_end"
         },
@@ -159,8 +159,8 @@
                 "*://*.wiwo.de/*"
             ],
             "js": [
-                "common.js",
-                "websites/wiwo.js"
+                "websites/wiwo-de.js",
+                "common.js"
             ],
             "run_at": "document_end"
         },
@@ -169,8 +169,8 @@
                 "*://*.wr.de/*"
             ],
             "js": [
-                "common.js",
-                "websites/wr.js"
+                "websites/wr-de.js",
+                "common.js"
             ],
             "run_at": "document_end"
         },
@@ -179,21 +179,22 @@
                 "*://*.zeit.de/*"
             ],
             "js": [
-                "common.js",
-                "websites/zeit.js"
+                "websites/zeit-de.js",
+                "common.js"
             ],
             "run_at": "document_end"
         }
     ],
     "web_accessible_resources": [
-        "websites/arstechnica.js"
+        "websites/arstechnica-com.js"
     ],
     "permissions": [
         "tabs",
         "activeTab",
         "declarativeContent",
         "http://*/*",
-        "https://*/*"
+        "https://*/*",
+        "storage"
     ],
     "-ms-preload": {
         "backgroundScript": "assets/edge/backgroundScriptsAPIBridge.js",

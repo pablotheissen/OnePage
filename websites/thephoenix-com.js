@@ -17,10 +17,12 @@ loadNextPage = function () {
     }
 }
 
-/* check if article is multipage */
-var re = /1\s+(?:\|\s+\d\s+)*(?:\|\s+(\d+)\s+)\|\s+next/i;
-if (re.test(document.body.innerText)) {
-    totalPages = re.exec(document.body.innerText)[1];
-    url = cleanUrl(location.href)
-    loadNextPage();
+runOnePage = function () {
+    /* check if article is multipage */
+    var re = /1\s+(?:\|\s+\d\s+)*(?:\|\s+(\d+)\s+)\|\s+next/i;
+    if (re.test(document.body.textContent)) {
+        totalPages = re.exec(document.body.textContent)[1];
+        url = cleanUrl(location.href)
+        loadNextPage();
+    }
 }

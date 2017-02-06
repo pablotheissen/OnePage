@@ -16,7 +16,9 @@ loadNextPage = function (dom) {
     }
 }
 
-var re = /next\spage/i;
-if (re.test(document.body.innerText)) {
-    loadNextPage(document);
-}
+runOnePage = function () {
+    var re = /next\spage/i;
+    if (re.test(document.body.textContent)) {
+        loadNextPage(document);
+    }
+}    

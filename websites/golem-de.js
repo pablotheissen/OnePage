@@ -42,7 +42,9 @@ loadNextPage = function (dom) {
     }
 }
 
-/* check if article is multipage */
-if (document.querySelector("link[rel=next]")) {
-    loadNextPage(document);
-}
+runOnePage = function () {
+    /* check if article is multipage */
+    if (document.querySelector("link[rel=next]")) {
+        loadNextPage(document);
+    }
+}    

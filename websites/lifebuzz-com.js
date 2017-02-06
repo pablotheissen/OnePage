@@ -11,17 +11,17 @@ lifebuzzLoader = function (doc) {
         document.querySelector(".single").appendChild(element);
     });
     /* remove junk from inbetween two pages like pagination and fb button */
-    document.querySelectorAll(".single > *").forEach(function(element) {
-        if(element.innerHTML.search("post-pagination") !== -1) {
+    document.querySelectorAll(".single > *").forEach(function (element) {
+        if (element.innerHTML.search("post-pagination") !== -1) {
             element.remove();
         }
-        else if(element.innerHTML.search("share-bar") !== -1) {
+        else if (element.innerHTML.search("share-bar") !== -1) {
             element.remove();
         }
-        else if(element.innerHTML.search("fb-comments") !== -1) {
+        else if (element.innerHTML.search("fb-comments") !== -1) {
             element.remove();
         }
-        else if(element.innerHTML.search("Trending on LifeBuzz") !== -1) {
+        else if (element.innerHTML.search("Trending on LifeBuzz") !== -1) {
             element.remove();
         }
     });
@@ -35,13 +35,16 @@ loadNextPage = function () {
     }
 }
 
-/* check if article is multipage */
-var re = /Page\s1 of\s(\d+)/i;
 var page = 1;
 var totalPages = 0;
-if (re.test(document.body.innerText)) {
-    /* get total number by reading "Page 1 of XXX"" */
-    totalPages = re.exec(document.body.innerText)[1];
-    var url = cleanUrl(window.location.href);
-    loadNextPage();
+var url;
+runOnePage = function () {
+    /* check if article is multipage */
+    var re = /Page\s1\sof\s(\d+)/i;
+    if (re.test(document.body.textContent)) {
+        /* get total number by reading "Page 1 of XXX"" */
+        totalPages = re.exec(document.body.textContent)[1];
+        url = cleanUrl(window.location.href);
+        loadNextPage();
+    }
 }

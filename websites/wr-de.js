@@ -1,10 +1,11 @@
 /** Example:
   * http://www.wr.de/-id6647514.html
   */
-
-/* wait for the slow js to render the page */
-if (document.querySelector(".pager") != null) {
-    window.addEventListener("load", wr, false);
+runOnePage = function () {
+    /* wait for the slow js to render the page */
+    if (document.querySelector(".pager") != null) {
+        window.addEventListener("load", wr, false);
+    }
 }
 function wr(evt) {
     /* pagination is done client-side by splitting article on every <h5> and hiding the pages by adding .page-container class to divs */
@@ -21,6 +22,6 @@ function wr(evt) {
         heading_old.parentElement.replaceChild(heading_new, heading_old);
     });
 
-    /* hide pagination */    
+    /* hide pagination */
     document.querySelector(".pager").style.display = "none";
 }

@@ -19,7 +19,9 @@ loadNextPage = function (dom) {
     }
 }
 
-var re = /keep\sreading/i;
-if (re.test(document.body.innerText)) {
-    loadNextPage(document);
+runOnePage = function () {
+    var re = /keep\sreading/i;
+    if (re.test(document.body.textContent)) {
+        loadNextPage(document);
+    }
 }
