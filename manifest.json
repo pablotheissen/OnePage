@@ -136,7 +136,7 @@
         },
         {
             "matches": [
-                "*://*.thephoenix.com/*",
+                "*://*.thephoenix.com/*"
             ],
             "js": [
                 "common.js",
