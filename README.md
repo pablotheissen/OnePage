@@ -14,6 +14,8 @@ Or of course by creating an Issue or Pull request at [GitHub](https://github.com
 ## Supported Websites
 * Arstechnica (→ [example](https://arstechnica.com/video/2016/11/the-2016-13-and-15-inch-touch-bar-macbook-pros-reviewed/))
 * Berliner Zeitung (→ [example](http://www.berliner-zeitung.de/berlin/stadtratskandidat-in-neukoelln-schwul--migranten-lehrer--afd-politiker-25608022))
+* The Boston Phoenix (→ [example](http://thephoenix.com/Boston/food/152872-))
+* The Celebrity Lane (→ [example](https://thecelebritylane.com/2310/))
 * Diply (→ [example](https://diply.com/kirsten-dunst-jake-gyllenhaal-split))
 * F.A.Z. (→ [example](http://www.faz.net/-gqe-8s7et))
 * Golem (→ [example](https://www.golem.de/news/indiegames-rundschau-u-boote-astronauten-und-haruki-murakami-1702-125929.html))
@@ -22,7 +24,6 @@ Or of course by creating an Issue or Pull request at [GitHub](https://github.com
 * Macworld (→ [example](http://www.macworld.co.uk/feature/mac-software/best-alternatives-itunes-for-mac-best-music-players-for-macos-3653318/))
 * Süddeutsche Zeitung (→ [example](http://sz.de/1.3348711))
 * Tagesspiegel (→ [example](http://www.tagesspiegel.de/19282294.html))
-* The Boston Phoenix (→ [example](http://thephoenix.com/Boston/food/152872-))
 * True Activist (→ [example](http://www.trueactivist.com/25-locations-youre-not-allowed-to-visit-gallery))
 * Wirtschafts Woche (→ [example](https://www.wiwo.de/19311936.html))
 * Westfälische Rundschau (→ [example](http://www.wr.de/-id6647514.html))

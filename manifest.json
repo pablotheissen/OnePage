@@ -26,7 +26,7 @@
     "content_scripts": [
         {
             "matches": [
-                "https://arstechnica.com/*"
+                "*://*.arstechnica.com/*"
             ],
             "js": [
                 "common.js",
@@ -36,7 +36,7 @@
         },
         {
             "matches": [
-                "http://www.berliner-zeitung.de/*"
+                "*://*.berliner-zeitung.de/*"
             ],
             "js": [
                 "common.js",
@@ -46,10 +46,7 @@
         },
         {
             "matches": [
-                "http://social.diply.com/*",
-                "http://diply.com/*",
-                "https://social.diply.com/*",
-                "https://diply.com/*"
+                "*://*.diply.com/*"
             ],
             "js": [
                 "common.js",
@@ -59,8 +56,7 @@
         },
         {
             "matches": [
-                "http://www.faz.net/*",
-                "https://www.faz.net/*"
+                "*://*.faz.net/*"
             ],
             "js": [
                 "common.js",
@@ -70,8 +66,7 @@
         },
         {
             "matches": [
-                "http://www.golem.de/*",
-                "https://www.golem.de/*"
+                "*://*.golem.de/*"
             ],
             "js": [
                 "common.js",
@@ -81,8 +76,7 @@
         },
         {
             "matches": [
-                "http://www.handelsblatt.com/*",
-                "https://www.handelsblatt.com/*"
+                "*://*.handelsblatt.com/*"
             ],
             "js": [
                 "common.js",
@@ -92,8 +86,7 @@
         },
         {
             "matches": [
-                "http://www.lifebuzz.com/*",
-                "https://www.lifebuzz.com/*"
+                "*://*.lifebuzz.com/*"
             ],
             "js": [
                 "common.js",
@@ -103,8 +96,7 @@
         },
         {
             "matches": [
-                "http://www.macworld.co.uk/*",
-                "https://www.macworld.co.uk/*"
+                "*://*.macworld.co.uk/*"
             ],
             "js": [
                 "common.js",
@@ -114,8 +106,7 @@
         },
         {
             "matches": [
-                "http://www.sueddeutsche.de/*",
-                "https://www.sueddeutsche.de/*"
+                "*://*.sueddeutsche.de/*"
             ],
             "js": [
                 "common.js",
@@ -125,8 +116,7 @@
         },
         {
             "matches": [
-                "http://www.tagesspiegel.de/*",
-                "https://www.sueddeutsche.de/*"
+                "*://*.tagesspiegel.de/*"
             ],
             "js": [
                 "common.js",
@@ -136,8 +126,17 @@
         },
         {
             "matches": [
-                "http://thephoenix.com/*",
-                "https://thephoenix.com/*"
+                "*://*.thecelebritylane.com/*"
+            ],
+            "js": [
+                "common.js",
+                "websites/thecelebritylane-com.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "*://*.thephoenix.com/*",
             ],
             "js": [
                 "common.js",
@@ -147,8 +146,7 @@
         },
         {
             "matches": [
-                "http://www.trueactivist.com/*",
-                "https://www.trueactivist.com/*"
+                "*://*.trueactivist.com/*"
             ],
             "js": [
                 "common.js",
@@ -158,8 +156,7 @@
         },
         {
             "matches": [
-                "http://www.wiwo.de/*",
-                "https://www.wiwo.de/*"
+                "*://*.wiwo.de/*"
             ],
             "js": [
                 "common.js",
@@ -169,8 +166,7 @@
         },
         {
             "matches": [
-                "http://www.wr.de/*",
-                "https://www.wr.de/*"
+                "*://*.wr.de/*"
             ],
             "js": [
                 "common.js",
@@ -180,9 +176,7 @@
         },
         {
             "matches": [
-                "http://www.zeit.de/*",
-                "https://ssl.zeit.de/*",
-                "https://www.zeit.de/"
+                "*://*.zeit.de/*",
             ],
             "js": [
                 "common.js",
