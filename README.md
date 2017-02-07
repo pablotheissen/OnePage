@@ -22,6 +22,7 @@ Or of course by creating an Issue or Pull request at [GitHub](https://github.com
 * Handelsblatt (→ [example](http://www.handelsblatt.com/19311926.html))
 * LifeBuzz (→ [example](http://www.lifebuzz.com/celebrity-records/))
 * Macworld (→ [example](http://www.macworld.co.uk/feature/mac-software/best-alternatives-itunes-for-mac-best-music-players-for-macos-3653318/))
+* Stuttgarter Zeitung (→ [example](http://www.stuttgarter-zeitung.de/inhalt..084a9970-40ff-4537-804c-0095c4c6bed5.html))
 * Süddeutsche Zeitung (→ [example](http://sz.de/1.3348711))
 * Tagesspiegel (→ [example](http://www.tagesspiegel.de/19282294.html))
 * True Activist (→ [example](http://www.trueactivist.com/25-locations-youre-not-allowed-to-visit-gallery))

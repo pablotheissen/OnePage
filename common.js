@@ -58,8 +58,7 @@ getDomByUrl = function (url, asyncCallback, asyncPass) {
  * Convert HTML sourcecode to DOM
  */
 htmlToDom = function (htmlSourceCode) {
-    var parser = new DOMParser();
-    return parser.parseFromString(htmlSourceCode, "text/html");
+    return new DOMParser().parseFromString(htmlSourceCode, "text/html");
 }
 
 /**
