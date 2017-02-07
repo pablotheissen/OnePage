@@ -106,6 +106,16 @@
         },
         {
             "matches": [
+                "*://*.netzwelt.de/*"
+            ],
+            "js": [
+                "websites/netzwelt-de.js",
+                "common.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
                 "*://*.stuttgarter-zeitung.de/*"
             ],
             "js": [
