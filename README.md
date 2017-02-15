@@ -18,6 +18,7 @@ Or of course by creating an Issue or Pull request at [GitHub](https://github.com
 * The Celebrity Lane (→ [example](https://thecelebritylane.com/2310/))
 * Diply (→ [example](https://diply.com/kirsten-dunst-jake-gyllenhaal-split))
 * F.A.Z. (→ [example](http://www.faz.net/-gqe-8s7et))
+* Forbes.com (→ [example](http://www.forbes.com/sites/michaelellsberg/2011/07/18/how-i-overcame-bipolar-ii/))
 * Golem (→ [example](https://www.golem.de/news/indiegames-rundschau-u-boote-astronauten-und-haruki-murakami-1702-125929.html))
 * Handelsblatt (→ [example](http://www.handelsblatt.com/19311926.html))
 * LifeBuzz (→ [example](http://www.lifebuzz.com/celebrity-records/))
