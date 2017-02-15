@@ -5,7 +5,7 @@
     "short_name": "OnePage",
     "description": "__MSG_extDescription__",
     "default_locale": "en",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "icons": {
         "128": "assets/logo-128.png"
     },
@@ -60,6 +60,16 @@
             ],
             "js": [
                 "websites/faz-net.js",
+                "common.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "*://*.forbes.com/*"
+            ],
+            "js": [
+                "websites/forbes-com.js",
                 "common.js"
             ],
             "run_at": "document_end"
